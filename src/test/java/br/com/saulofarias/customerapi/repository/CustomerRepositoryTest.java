@@ -38,7 +38,8 @@ public class CustomerRepositoryTest {
 	public void shouldReturnCustomers() throws ParseException {
 		City city = new City(null, "City", "PE");
 		entityManager.persist(city);
-		Customer customer1 = new Customer(null, "Customer1", 'M', DateUtil.stringToDate("2010-09-09"), 12, city);
+		Customer customer1 = new Customer(null, "Customer1", 'M', DateUtil.stringToDate("2010-09-09"), 12,
+				city);
 
 		List<Customer> customers = Arrays.asList(customer1);
 
@@ -47,7 +48,7 @@ public class CustomerRepositoryTest {
 			entityManager.flush();
 		}
 
-		assertEquals(2, repository.findAll().size());
+		assertEquals(1, repository.findAll().size());
 	}
 
 	@Test
