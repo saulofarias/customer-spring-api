@@ -292,4 +292,4 @@ A API está configurada para ser usada com o Docker, para tal devemos seguir os 
 
 * Devemos rodar o seguinte comando: _docker-compose up --build_
 
-Se tudo ocorrer bem podemos acessar os recursos da API normalmente como mostrado no tópico anterior.
+Se tudo ocorrer bem podemos acessar os recursos da API normalmente como mostrado no tópico Endpoints.
